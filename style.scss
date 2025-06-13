@@ -122,6 +122,11 @@ body {
   }
 }
 
+.games-link {
+  display: flex;
+  text-decoration: none;
+}
+
 .games:hover {
   transform: scale(1.1);
 }
