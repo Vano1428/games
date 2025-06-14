@@ -239,4 +239,12 @@ body {
   .about-games__description {
     display: none;
   }
+}
+@media (max-width: 415px) {
+  .games {
+    width: 96%;
+  }
+  .games__img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
