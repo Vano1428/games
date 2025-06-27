@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+  }
+
+  .star-1 {
+    position: absolute;
+    top: 97px;
+    left: 37px;
+  }
+
+  .star-2 {
+    position: absolute;
+    top: 64px;
+    left: 91px;
+  }
+
+  .star-3 {
+    position: absolute;
+    top: 614px;
+    right: 106px;
+  }
+
+  .star-4 {
+    position: absolute;
+    display: none;
+  }
+
+  .star-5 {
+    position: absolute;
+    top: 630px;
+    right: 34px;
+  }
+
+  .main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .main-content__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .main-content__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-left: 17px;
+  }
+
+  .about-games {
+    padding-left: 17px;
+  }
+
+  .about-games__title-comp {
+    display: none;
+  }
+
+  .about-games__title-mob {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .about-games__description {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .games {
+    width: 96%;
+  }
+
+  .games__img {
+    width: 100%;
+  }
+}

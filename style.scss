@@ -95,7 +95,7 @@ body {
   background-color: rgb(32, 32, 39);
   min-height: 800px;
 
-  &__title {
+  &__title-comp {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 64px;
@@ -103,6 +103,17 @@ body {
     line-height: 78px;
     padding-top: 94px;
     padding-bottom: 24px;
+  }
+
+  &__title-mob {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    padding-top: 94px;
+    padding-bottom: 24px;
+    display: none;
   }
 
   &__description {
@@ -120,6 +131,11 @@ body {
     gap: 30px;
     padding-bottom: 50px;
   }
+}
+
+.games-link {
+  display: flex;
+  text-decoration: none;
 }
 
 .games:hover {
@@ -163,3 +179,5 @@ body {
     margin-bottom: 36px;
   }
 }
+
+@import "mobile";
