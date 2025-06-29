@@ -172,6 +172,10 @@ body {
   margin-bottom: 36px;
 }
 
+.up {
+  margin-bottom: 32px;
+}
+
 .mini-games {
   background-color: rgb(32, 32, 39);
   min-height: 3310px;
@@ -372,7 +376,7 @@ body {
     text-align: left;
   }
   .m-games__button {
-    width: 285px;
+    width: 294px;
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -413,7 +417,7 @@ body {
     max-width: 343px;
   }
   .m-games__button {
-    width: 235px;
+    width: 244px;
   }
 }
 @media (max-width: 320px) {
@@ -421,7 +425,7 @@ body {
     max-width: 288px;
   }
   .m-games__button {
-    width: 180px;
+    width: 188px;
   }
   .m-games__name {
     font-size: 28px;
