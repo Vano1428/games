@@ -81,7 +81,7 @@
 
   .m-games {
     flex-direction: column;
-    width: 92%;
+    width: 100%;
     max-width: 736px;
   }
 
@@ -89,7 +89,7 @@
     flex-direction: column;
   }
 
-  .mini-games {
+  .mini-games__content {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -98,6 +98,7 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
+    padding-left: 16px;
   }
 
   .m-games__name {
