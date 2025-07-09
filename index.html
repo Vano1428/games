@@ -152,11 +152,13 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
           Если готов, нажимай <strong>«Поехали!»</strong> и
           <strong>приступай</strong>.
         </h5>
-        <button class="main-content__button">Поехали!</button>
+        <a href="#aboutgames"
+          ><button class="main-content__button">Поехали!</button></a
+        >
       </div>
     </section>
     <section class="about-games center">
-      <h1 class="about-games__title-comp">Об играх</h1>
+      <a id="aboutgames"><h1 class="about-games__title-comp">Об играх</h1></a>
       <h1 class="about-games__title-mob">Мини-игры</h1>
       <h5 class="about-games__description">
         В моей коллекции представлено 6 игр на разные темы. <br />
@@ -165,14 +167,14 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
       </h5>
       <div class="about-games__content">
         <div>
-          <a href="" class="games-link"
+          <a href="#game1" class="games-link"
             ><article class="games up">
               <img class="games__img" src="img/game 1.jpeg" alt="" />
               <h3 class="games__number">Игра №1</h3>
               <h4 class="games__name">Угадай число</h4>
             </article></a
           >
-          <a href="" class="games-link"
+          <a href="#game4" class="games-link"
             ><article class="games">
               <img class="games__img" src="img/game 4.jpeg" alt="" />
               <h3 class="games__number">Игра №4</h3>
@@ -186,13 +188,13 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
         </div>
 
         <div>
-          <a href="" class="games-link"
+          <a href="#game2" class="games-link"
             ><article class="games up">
               <img class="games__img" src="img/game 2.jpeg" alt="Игра №2" />
               <h3 class="games__number">Игра №2</h3>
               <h4 class="games__name">Простая арифметика</h4>
             </article></a
-          ><a href="" class="games-link"
+          ><a href="#game5" class="games-link"
             ><article class="games">
               <img class="games__img" src="img/game 5.jpeg" alt="" />
               <h3 class="games__number">Игра №5</h3>
@@ -205,13 +207,13 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
         </div>
 
         <div>
-          <a href="" class="games-link"
+          <a href="#game3" class="games-link"
             ><article class="games up">
               <img class="games__img" src="img/game 3.jpeg" alt="" />
               <h3 class="games__number">Игра №3</h3>
               <h4 class="games__name">Переверни текст</h4>
             </article></a
-          ><a href="" class="games-link"
+          ><a href="#game6" class="games-link"
             ><article class="games">
               <img class="games__img" src="img/game 6.jpeg" alt="" />
               <h3 class="games__number">Игра №6</h3>
@@ -229,7 +231,7 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
     <section class="mini-games center">
       <h1 class="mini-games__title">Мини-игры</h1>
       <div class="mini-games__content">
-        <a href="" class="m-games-link"
+        <a id="game1" class="m-games-link"
           ><article class="m-games odd">
             <img class="m-games__img" src="img/Обложка карточки.jpeg" alt="" />
             <div class="m-games__about">
@@ -245,7 +247,7 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
           </article></a
         >
 
-        <a href="" class="m-games-link"
+        <a id="game2" class="m-games-link"
           ><article class="m-games honest">
             <img
               class="m-games__img"
@@ -261,12 +263,14 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
                 Попробуй решить простые <br />
                 арифметические задачи.
               </h4>
-              <button class="m-games__button">Играть!</button>
+              <button class="m-games__button" onclick="startGame2()">
+                Играть!
+              </button>
             </div>
           </article></a
         >
 
-        <a href="" class="m-games-link"
+        <a id="game3" class="m-games-link"
           ><article class="m-games odd">
             <img
               class="m-games__img"
@@ -287,7 +291,7 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
           </article></a
         >
 
-        <a href="" class="m-games-link"
+        <a id="game4" class="m-games-link"
           ><article class="m-games honest">
             <img
               class="m-games__img"
@@ -309,7 +313,7 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
           </article></a
         >
 
-        <a href="" class="m-games-link"
+        <a id="game5" class="m-games-link"
           ><article class="m-games odd">
             <img
               class="m-games__img"
@@ -330,7 +334,7 @@ family=Montserrat:ital,wght@0,500;1,500&display=swap"
           </article></a
         >
 
-        <a href="" class="m-games-link"
+        <a id="game6" class="m-games-link"
           ><article class="m-games honest">
             <img
               class="m-games__img"
