@@ -65,3 +65,40 @@ function startGame3() {
     alert("Текст не введен! Повтори, пожалуйста!");
   }
 }
+
+function startGame5() {
+  const quiz = [
+    {
+      question: "Какого цвета небо?",
+      options: ["1. Красного", "2. Голубого", "3. Зеленого"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1. Шесть", "2. Семь", "3. Восемь"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1. Четыре", "2. Пять", "3. Шесть"],
+      correctAnswer: 2,
+    },
+  ];
+
+  let quantity = 0;
+  for (let i = 0; i < quiz.length; i++) {
+    let quizQuestion = Number(
+      prompt(
+        `Выбери правильный ответ и получи за каждый один кофе: - ${quiz[i].question} ${quiz[i].options}`
+      )
+    );
+    if (quizQuestion === quiz[i][`correctAnswer`]) {
+      quantity++;
+      alert("Молодец, верный ответ!");
+    } else {
+      alert("Читай больше книг!");
+    }
+  }
+
+  alert(`Поздравляю! Ты выиграл ${quantity} кофе!`);
+}
