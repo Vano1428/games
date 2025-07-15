@@ -27,22 +27,22 @@ function startGame2() {
 
   switch (operation) {
     case "+":
-      userAnswer = prompt(`Сложите ${a} и ${b}`);
+      userAnswer = prompt(`Сложи ${a} и ${b}`);
       correctAnswer = a + b;
       break;
 
     case "-":
-      userAnswer = prompt(`Из ${a} вычтите ${b}`);
+      userAnswer = prompt(`Из ${a} вычти ${b}`);
       correctAnswer = a - b;
       break;
 
     case "*":
-      userAnswer = prompt(`Умножьте ${a} на ${b}`);
+      userAnswer = prompt(`Умножь ${a} на ${b}`);
       correctAnswer = a * b;
       break;
 
     case "/":
-      userAnswer = prompt(`Разделите ${a} на ${b}`);
+      userAnswer = prompt(`Раздели ${a} на ${b}`);
       correctAnswer = a / b;
       break;
   }
@@ -53,5 +53,15 @@ function startGame2() {
     alert(`Отлично! Это верный ответ!`);
   } else {
     alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
+  }
+}
+
+function startGame3() {
+  let text = prompt("Введи любой текст:");
+  if (text) {
+    let reversedText = text.split("").reverse().join("");
+    alert(reversedText);
+  } else {
+    alert("Текст не введен! Повтори, пожалуйста!");
   }
 }
