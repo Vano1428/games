@@ -61,8 +61,8 @@ console.log(randomNumber);
 randomNumber = getRandomInteger(20, 40);
 console.log(randomNumber); // задание 7
 
-let currentDate = new Date();
-console.log(currentDate); // задание 8
+let todaysDate = new Date();
+console.log(todaysDate); // задание 8
 
 let currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
@@ -95,9 +95,9 @@ function ourDate(date) {
   const year = date.getFullYear();
   const month = date.getMonth();
   const day = date.getDate();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
+  const hours = date.getHours().toString().padStart(2, "0");
+  const minutes = date.getMinutes().toString().padStart(2, "0");
+  const seconds = date.getSeconds().toString().padStart(2, "0");
   const dayOfWeek = days[date.getDay()];
 
   return `Дата: ${day} ${months[month]} ${year} - это ${dayOfWeek}. Время: ${hours}:${minutes}:${seconds}`;
