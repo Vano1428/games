@@ -102,3 +102,31 @@ function startGame5() {
 
   alert(`Поздравляю! Ты выиграл ${quantity} кофе!`);
 }
+
+function startGame4() {
+  const options = ["камень", "ножницы", "бумага"];
+  const randomIndex = Math.floor(Math.random() * options.length);
+  let compChoice = options[randomIndex];
+  console.log(compChoice);
+  let userChoice = prompt(
+    `Привет мой друг! \nДавай сыграем c компом в "Камень - Ножницы - Бумага"? \nВыбери "Камень", "Ножницы" или "Бумага".`
+  ).toLowerCase();
+
+  const printResult = (userChoice, compChoice) => {
+    if (
+      (userChoice === "камень" && compChoice === "ножницы") ||
+      (userChoice === "ножницы" && compChoice === "бумага") ||
+      (userChoice === "бумага" && compChoice === "камень")
+    ) {
+      return `Ты выиграл! Выбор компьютера "${compChoice}"`;
+    }
+    if (userChoice === compChoice) {
+      return `Ничья. Выбор компьютера "${compChoice}"`;
+    }
+    if (!options.includes(userChoice)) {
+      return `Ты ввел неверное значение`;
+    }
+    return `Увы, ты проиграл, но в следующий раз тебе повезет! Выбор компьютера "${compChoice}"`;
+  };
+  alert(printResult(userChoice, compChoice));
+}
