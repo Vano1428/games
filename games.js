@@ -27,22 +27,22 @@ function startGame2() {
 
   switch (operation) {
     case "+":
-      userAnswer = prompt(`Сложите ${a} и ${b}`);
+      userAnswer = prompt(`Сложи ${a} и ${b}`);
       correctAnswer = a + b;
       break;
 
     case "-":
-      userAnswer = prompt(`Из ${a} вычтите ${b}`);
+      userAnswer = prompt(`Из ${a} вычти ${b}`);
       correctAnswer = a - b;
       break;
 
     case "*":
-      userAnswer = prompt(`Умножьте ${a} на ${b}`);
+      userAnswer = prompt(`Умножь ${a} на ${b}`);
       correctAnswer = a * b;
       break;
 
     case "/":
-      userAnswer = prompt(`Разделите ${a} на ${b}`);
+      userAnswer = prompt(`Раздели ${a} на ${b}`);
       correctAnswer = a / b;
       break;
   }
@@ -54,4 +54,51 @@ function startGame2() {
   } else {
     alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
   }
+}
+
+function startGame3() {
+  let text = prompt("Введи любой текст:");
+  if (text) {
+    let reversedText = text.split("").reverse().join("");
+    alert(reversedText);
+  } else {
+    alert("Текст не введен! Повтори, пожалуйста!");
+  }
+}
+
+function startGame5() {
+  const quiz = [
+    {
+      question: "Какого цвета небо?",
+      options: ["1. Красного", "2. Голубого", "3. Зеленого"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько дней в неделе?",
+      options: ["1. Шесть", "2. Семь", "3. Восемь"],
+      correctAnswer: 2,
+    },
+    {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1. Четыре", "2. Пять", "3. Шесть"],
+      correctAnswer: 2,
+    },
+  ];
+
+  let quantity = 0;
+  for (let i = 0; i < quiz.length; i++) {
+    let quizQuestion = Number(
+      prompt(
+        `Выбери правильный ответ и получи за каждый один кофе: - ${quiz[i].question} ${quiz[i].options}`
+      )
+    );
+    if (quizQuestion === quiz[i][`correctAnswer`]) {
+      quantity++;
+      alert("Молодец, верный ответ!");
+    } else {
+      alert("Читай больше книг!");
+    }
+  }
+
+  alert(`Поздравляю! Ты выиграл ${quantity} кофе!`);
 }
