@@ -128,6 +128,46 @@ body {
   padding-bottom: 50px;
 }
 
+.scroll {
+  overflow: hidden;
+  background: rgb(188, 236, 48);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll__bar {
+  max-height: 90px;
+  gap: 51px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation-direction: normal;
+}
+.scroll__name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-35%);
+  }
+}
 .games-link {
   display: flex;
   text-decoration: none;
