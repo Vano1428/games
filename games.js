@@ -14,8 +14,6 @@ function startGame1() {
   }
 }
 
-console.log(randomNumber);
-
 function startGame2() {
   const operations = ["+", "-", "*", "/"];
   let operation = operations[Math.floor(Math.random() * operations.length)];
@@ -130,3 +128,19 @@ function startGame4() {
   };
   alert(printResult(userChoice, compChoice));
 }
+
+const section = document.getElementById("color-section");
+const button = document.getElementById("color-button");
+
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+button.addEventListener("click", function () {
+  section.style.backgroundColor = getRandomColor();
+});
